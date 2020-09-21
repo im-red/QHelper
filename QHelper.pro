@@ -17,28 +17,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     src/about/aboutwidget.cpp \
-    src/addwatermark/addwatermarkwidget.cpp \
     src/common/view.cpp \
     src/main.cpp \
     src/mainwindow.cpp \
-    src/common/util.cpp
+    src/common/util.cpp \
+    src/watermark/normalwatermarkwidget.cpp
 
 HEADERS += \
     src/about/aboutwidget.h \
-    src/addwatermark/addwatermarkwidget.h \
     src/common/view.h \
     src/mainwindow.h \
-    src/common/util.h
+    src/common/util.h \
+    src/watermark/normalwatermarkwidget.h
 
 INCLUDEPATH += src \
     src/common \
-    src/addwatermark \
+    src/watermark \
     src/about
 
 FORMS += \
     src/about/aboutwidget.ui \
-    src/addwatermark/addwatermarkwidget.ui \
-    src/mainwindow.ui
+    src/mainwindow.ui \
+    src/watermark/normalwatermarkwidget.ui
 
 TRANSLATIONS += \
     res/QHelper_zh_CN.ts

@@ -35,114 +35,80 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>AddWatermarkWidget</name>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.ui" line="14"/>
-        <source>Form</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.ui" line="31"/>
         <source>Open image</source>
-        <translation>打开图片</translation>
+        <translation type="vanished">打开图片</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.ui" line="52"/>
         <source>Text</source>
-        <translation>文字</translation>
+        <translation type="vanished">文字</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.ui" line="103"/>
         <source>Size(10-100)</source>
-        <translation>大小(10-100)</translation>
+        <translation type="vanished">大小(10-100)</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.ui" line="160"/>
         <source>Thickness(1-100)</source>
-        <translation>密度(1-100)</translation>
+        <translation type="vanished">密度(1-100)</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.ui" line="217"/>
         <source>Opacity(0-255)</source>
-        <translation>不透明度(0-255)</translation>
+        <translation type="vanished">不透明度(0-255)</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.ui" line="274"/>
         <source>Color</source>
-        <translation>颜色</translation>
+        <translation type="vanished">颜色</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.ui" line="328"/>
         <source>Angle</source>
-        <translation>角度</translation>
+        <translation type="vanished">角度</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.ui" line="395"/>
         <source>Add watermark</source>
-        <translation>添加水印</translation>
+        <translation type="vanished">添加水印</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.ui" line="411"/>
         <source>Save image</source>
-        <translation>保存图片</translation>
+        <translation type="vanished">保存图片</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="32"/>
         <source>Open Image</source>
-        <translation>打开图片</translation>
+        <translation type="vanished">打开图片</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="32"/>
-        <source>Images (*.bmp *.png *.jpg)</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="43"/>
         <source>Save Image</source>
-        <translation>保存图片</translation>
+        <translation type="vanished">保存图片</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="43"/>
-        <source>Images (*.png)</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="76"/>
         <source>Add watermark succeeded</source>
-        <translation>水印添加成功</translation>
+        <translation type="vanished">水印添加成功</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="81"/>
         <source>Add watermark failed</source>
-        <translation>水印添加失败</translation>
+        <translation type="vanished">水印添加失败</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="89"/>
         <source>Invalid path: </source>
-        <translation>无效的路径: </translation>
+        <translation type="vanished">无效的路径: </translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="95"/>
         <source>Invalid image</source>
-        <translation>无效的图片</translation>
+        <translation type="vanished">无效的图片</translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="99"/>
         <source>Open succeeded: </source>
-        <translation>打开成功: </translation>
+        <translation type="vanished">打开成功: </translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="113"/>
         <source>Save succeeded: </source>
-        <translation>保存成功: </translation>
+        <translation type="vanished">保存成功: </translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="117"/>
         <source>Save failed: </source>
-        <translation>保存失败: </translation>
+        <translation type="vanished">保存失败: </translation>
     </message>
     <message>
-        <location filename="../src/addwatermark/addwatermarkwidget.cpp" line="187"/>
         <source>Please input watermark text</source>
-        <translation>请输入水印文字</translation>
+        <translation type="vanished">请输入水印文字</translation>
     </message>
 </context>
 <context>
@@ -153,9 +119,13 @@ p, li { white-space: pre-wrap; }
         <translation>QHelper</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.ui" line="31"/>
         <source>Add watermark</source>
-        <translation>添加水印</translation>
+        <translation type="vanished">添加水印</translation>
+    </message>
+    <message>
+        <location filename="../src/mainwindow.ui" line="31"/>
+        <source>Normal watermark</source>
+        <translation>普通水印</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.ui" line="49"/>
@@ -180,6 +150,148 @@ p, li { white-space: pre-wrap; }
         <location filename="../src/mainwindow.ui" line="72"/>
         <source>Chinese</source>
         <translation>中文</translation>
+    </message>
+</context>
+<context>
+    <name>NormalWatermarkWidget</name>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="14"/>
+        <source>Form</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="31"/>
+        <source>Open image</source>
+        <translation>打开图片</translation>
+    </message>
+    <message>
+        <source>Text</source>
+        <translation type="vanished">文字</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="125"/>
+        <source>Size(10-100)</source>
+        <translation>大小(10-100)</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="383"/>
+        <source>Thickness(1-100)</source>
+        <translation>密度(1-100)</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="440"/>
+        <source>Opacity(0-255)</source>
+        <translation>不透明度(0-255)</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="182"/>
+        <source>Color</source>
+        <translation>颜色</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="48"/>
+        <source>Text watermark</source>
+        <translation>文字水印</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="74"/>
+        <source>Watermark text</source>
+        <translation>水印文字</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="223"/>
+        <source>Image watermark</source>
+        <translation>图片水印</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="255"/>
+        <source>Watermark image</source>
+        <translation>水印图片</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="311"/>
+        <source>...</source>
+        <translation>...</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="334"/>
+        <source>Scale(0.1-10)</source>
+        <translation>缩放(0.1-10)</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="497"/>
+        <source>Angle</source>
+        <translation>角度</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="564"/>
+        <source>Add watermark</source>
+        <translation>添加水印</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.ui" line="580"/>
+        <source>Save image</source>
+        <translation>保存图片</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="49"/>
+        <source>Open Image</source>
+        <translation>打开图片</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="49"/>
+        <source>Images (*.bmp *.png *.jpg)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="60"/>
+        <source>Save Image</source>
+        <translation>保存图片</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="60"/>
+        <source>Images (*.png)</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="93"/>
+        <source>Add watermark succeeded</source>
+        <translation>水印添加成功</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="98"/>
+        <source>Add watermark failed</source>
+        <translation>水印添加失败</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="106"/>
+        <source>Invalid path: </source>
+        <translation>无效的路径: </translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="112"/>
+        <source>Invalid image</source>
+        <translation>无效的图片</translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="116"/>
+        <source>Open succeeded: </source>
+        <translation>打开成功: </translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="130"/>
+        <source>Save succeeded: </source>
+        <translation>保存成功: </translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="134"/>
+        <source>Save failed: </source>
+        <translation>保存失败: </translation>
+    </message>
+    <message>
+        <location filename="../src/watermark/normalwatermarkwidget.cpp" line="204"/>
+        <source>Please input watermark text</source>
+        <translation>请输入水印文字</translation>
     </message>
 </context>
 </TS>

@@ -21,16 +21,16 @@
 #include <QColorDialog>
 
 namespace Ui {
-class AddWatermarkWidget;
+class NormalWatermarkWidget;
 }
 
-class AddWatermarkWidget : public QWidget
+class NormalWatermarkWidget : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit AddWatermarkWidget(QWidget *parent = nullptr);
-    ~AddWatermarkWidget();
+    explicit NormalWatermarkWidget(QWidget *parent = nullptr);
+    ~NormalWatermarkWidget();
 
 private slots:
     void on_openButton_clicked();
@@ -46,7 +46,7 @@ private:
     void setTextLineEditWarn(bool warn);
 
 private:
-    Ui::AddWatermarkWidget *ui;
+    Ui::NormalWatermarkWidget *ui;
     QColorDialog *m_colorDialog;
 
     QImage m_originalImage;

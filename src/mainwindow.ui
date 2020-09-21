@@ -26,9 +26,9 @@
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <widget class="AddWatermarkWidget" name="tab">
+      <widget class="NormalWatermarkWidget" name="tab">
        <attribute name="title">
-        <string>Add watermark</string>
+        <string>Normal watermark</string>
        </attribute>
       </widget>
      </widget>
@@ -80,9 +80,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>AddWatermarkWidget</class>
+   <class>NormalWatermarkWidget</class>
    <extends>QWidget</extends>
-   <header>addwatermarkwidget.h</header>
+   <header>normalwatermarkwidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

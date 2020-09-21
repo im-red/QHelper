@@ -15,8 +15,8 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  ********************************************************************************/
 
-#include "addwatermarkwidget.h"
-#include "ui_addwatermarkwidget.h"
+#include "normalwatermarkwidget.h"
+#include "ui_normalwatermarkwidget.h"
 #include "util.h"
 
 #include <QFileDialog>
@@ -25,9 +25,9 @@
 #include <QFont>
 #include <QFontMetrics>
 
-AddWatermarkWidget::AddWatermarkWidget(QWidget *parent)
+NormalWatermarkWidget::NormalWatermarkWidget(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::AddWatermarkWidget)
+    , ui(new Ui::NormalWatermarkWidget)
     , m_colorDialog(new QColorDialog(this))
     , m_color(Qt::white)
 {
@@ -36,15 +36,15 @@ AddWatermarkWidget::AddWatermarkWidget(QWidget *parent)
     onColorChanged(m_color);
     m_colorDialog->setCurrentColor(m_color);
 
-    connect(m_colorDialog, &QColorDialog::currentColorChanged, this, &AddWatermarkWidget::onColorChanged);
+    connect(m_colorDialog, &QColorDialog::currentColorChanged, this, &NormalWatermarkWidget::onColorChanged);
 }
 
-AddWatermarkWidget::~AddWatermarkWidget()
+NormalWatermarkWidget::~NormalWatermarkWidget()
 {
     delete ui;
 }
 
-void AddWatermarkWidget::on_openButton_clicked()
+void NormalWatermarkWidget::on_openButton_clicked()
 {
     QString path = QFileDialog::getOpenFileName(this, tr("Open Image"), "", tr("Images (*.bmp *.png *.jpg)"));
     qDebug() << "path:" << path;
@@ -55,7 +55,7 @@ void AddWatermarkWidget::on_openButton_clicked()
     loadImage(path);
 }
 
-void AddWatermarkWidget::on_saveButton_clicked()
+void NormalWatermarkWidget::on_saveButton_clicked()
 {
     QString path = QFileDialog::getSaveFileName(this, tr("Save Image"), "", tr("Images (*.png)"));
     qDebug() << "path:" << path;
@@ -66,12 +66,12 @@ void AddWatermarkWidget::on_saveButton_clicked()
     saveImage(path);
 }
 
-void AddWatermarkWidget::on_colorButton_clicked()
+void NormalWatermarkWidget::on_colorButton_clicked()
 {
     m_colorDialog->show();
 }
 
-void AddWatermarkWidget::on_addWatermarkButton_clicked()
+void NormalWatermarkWidget::on_addWatermarkButton_clicked()
 {
     QString text = ui->textLineEdit->text();
     if (text.size() == 0)
@@ -99,7 +99,7 @@ void AddWatermarkWidget::on_addWatermarkButton_clicked()
     }
 }
 
-void AddWatermarkWidget::loadImage(const QString &path)
+void NormalWatermarkWidget::loadImage(const QString &path)
 {
     if (!QFile::exists(path))
     {
@@ -123,7 +123,7 @@ void AddWatermarkWidget::loadImage(const QString &path)
     setTextLineEditWarn(false);
 }
 
-void AddWatermarkWidget::saveImage(const QString &path)
+void NormalWatermarkWidget::saveImage(const QString &path)
 {
     if (m_watermarkedImage.save(path, "png"))
     {
@@ -135,7 +135,7 @@ void AddWatermarkWidget::saveImage(const QString &path)
     }
 }
 
-bool AddWatermarkWidget::updateWatermark(const QString &text, int size, int thickness, int opacity, const QColor &color, int angle)
+bool NormalWatermarkWidget::updateWatermark(const QString &text, int size, int thickness, int opacity, const QColor &color, int angle)
 {
     qDebug() << "text:" << text
              << "size:" << size
@@ -185,7 +185,7 @@ bool AddWatermarkWidget::updateWatermark(const QString &text, int size, int thic
     return true;
 }
 
-void AddWatermarkWidget::onColorChanged(const QColor &color)
+void NormalWatermarkWidget::onColorChanged(const QColor &color)
 {
     QString qss = QString("background-color: rgb(%1, %2, %3)")
             .arg(color.red())
@@ -194,7 +194,7 @@ void AddWatermarkWidget::onColorChanged(const QColor &color)
     ui->colorButton->setStyleSheet(qss);
 }
 
-void AddWatermarkWidget::setTextLineEditWarn(bool warn)
+void NormalWatermarkWidget::setTextLineEditWarn(bool warn)
 {
     QString qss;
     if (warn)
