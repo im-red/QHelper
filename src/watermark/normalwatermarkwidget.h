@@ -19,6 +19,7 @@
 
 #include <QWidget>
 #include <QColorDialog>
+#include <QLineEdit>
 
 namespace Ui {
 class NormalWatermarkWidget;
@@ -27,6 +28,12 @@ class NormalWatermarkWidget;
 class NormalWatermarkWidget : public QWidget
 {
     Q_OBJECT
+
+    enum Tab
+    {
+        TextTab = 0,
+        ImageTab = 1
+    };
 
 public:
     explicit NormalWatermarkWidget(QWidget *parent = nullptr);
@@ -37,13 +44,16 @@ private slots:
     void on_saveButton_clicked();
     void on_colorButton_clicked();
     void on_addWatermarkButton_clicked();
+    void on_openWatermarkButton_clicked();
 
 private:
     void loadImage(const QString &path);
     void saveImage(const QString &path);
+    void loadWatermarkImage(const QString &path);
     bool updateWatermark(const QString &text, int size, int thickness, int opacity, const QColor &color, int angle);
+    bool updateWatermark(double scale, int thickness, int opacity, int angle);
     void onColorChanged(const QColor &color);
-    void setTextLineEditWarn(bool warn);
+    void setTextLineEditWarn(QLineEdit *widget, bool warn, const QString &msg = QString());
 
 private:
     Ui::NormalWatermarkWidget *ui;
@@ -51,6 +61,8 @@ private:
 
     QImage m_originalImage;
     QImage m_watermarkedImage;
+
+    QImage m_watermarkImage;
 
     QString m_text;
     int m_size = 0;
